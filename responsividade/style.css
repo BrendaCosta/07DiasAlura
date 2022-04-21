@@ -12,7 +12,7 @@
 body{
     background: var(--cor-background);
     font-family: 'Montserrat', sans-serif;
-    padding-top: 80px;
+    
 
 }
 .fundo{
@@ -22,7 +22,7 @@ body{
     height: 100vh;
     z-index: 990;
     position: fixed;
-    margin-top: -80px;
+ /*   margin-top: -80px; */
 }
 .perfil{
     display: flex;
@@ -71,6 +71,7 @@ h3{
 }
 main{
     padding: 0.5rem;
+    padding-top: 80px;
 }
 .card{
     background: #FFFFFF;
@@ -239,6 +240,16 @@ button{
     align-items: center;
     gap: 5px;
 }
+.botao-menu:hover{
+    color: #4894FF;
+    background: #e5e5e582;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+.botao-menu ion-icon:hover{
+    color: #4894FF
+}
 
 
  .ativo,
@@ -253,6 +264,24 @@ button{
 .botao-menu ion-icon{
     font-size: 25px;
 }
+
+
+aside{
+    background-color: #fffefe;
+}
+aside .botao-menu{
+    flex-direction: row;
+    margin: 10px;
+}
+
+
+
+@media (max-width: 768px){
+    aside{
+        display: none;
+    }
+}
+
 @media (min-width: 768px){
     .cards{
         display: grid;
@@ -262,16 +291,20 @@ button{
      }
 }
  @media (min-width: 1024px){
+     body{
+        display: grid;
+        grid-template-columns: 200px 1fr;
+     }
     .cards{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
 
      }
-     /* .card{
-         width: 100%;
-     } */
      .menu-botao-flutuante{
         bottom: 190px;
+     }
+     .rodape{
+         display: none;
      }
  }
