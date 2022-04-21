@@ -33,7 +33,7 @@ body{
     background: var(--cor-background);
     width: 100%;
     z-index: 800;
-    padding: 0.5rem;
+    padding: 0.8rem;
 
 
 }
@@ -299,6 +299,10 @@ aside .botao-menu{
         display: grid;
         grid-template-columns: 200px 1fr;
      }
+     main {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
     .cards{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -311,4 +315,8 @@ aside .botao-menu{
      .rodape{
          display: none;
      }
+    .botao-flutuante{
+        bottom: 20px;
+        margin-right: 15px;
+    }
  }
