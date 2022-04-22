@@ -151,6 +151,15 @@ button{
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
+    cursor: pointer;
+ }
+ button:hover{
+    border: 2px solid #4894FF;
+    background: #fff;
+    box-shadow: 0px 4px 16px rgba(72, 148, 255, 0.16);
+    border-radius: 8px;
+    color: #4894FF;
+
  }
 
  .video{
@@ -281,12 +290,78 @@ aside .botao-menu{
     margin: 10px;
 }
 
+.formulario{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    width: 500px;
+}
 
+.formulario button{
+    background-color: #4894FF;
+    color: #fff;
+    width: 100%;
+}
+
+.formulario button:hover{
+    border: 2px solid #4894FF;
+    background: #fff;
+    box-shadow: 0px 4px 16px rgba(72, 148, 255, 0.16);
+    border-radius: 8px;
+    color: #4894FF;
+
+ }
+
+.formulario input,
+select,
+textarea{
+    background: #FFFFFF;
+    border: 1px solid #ECECEC;
+    box-sizing: border-box;
+    border-radius: 8px;
+    height: 50px;
+    padding: 10px;
+    
+    
+}
+option{
+    height: 40px!important;
+}
+textarea{
+    height: 200px;
+    resize: none;
+}
+
+
+
+.marcacao{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+}
+.itens-marcacao{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.copy{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    margin-top: 1rem;
+    background: #fff;
+}
 
 @media (max-width: 768px){
-    aside{
+    aside,
+    .formulario,
+    .copy{
         display: none;
     }
+    
 }
 
 @media (min-width: 768px){
@@ -319,7 +394,6 @@ aside .botao-menu{
          display: none;
      }
     .botao-flutuante{
-        bottom: 20px;
-        margin-right: 15px;
+        display: none;
     }
  }
