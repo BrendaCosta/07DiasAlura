@@ -1,0 +1,110 @@
+body{
+    background-color: #17162E;
+    color: #fff;
+    font-family: 'Kumbh Sans', sans-serif;
+    height: 100vh;
+    margin: 1rem 10rem;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.buscar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.3rem;
+}
+.buscar,
+.buscar input{
+    background: #FFFFFF;
+    opacity: 0.2;
+    border-radius: 8px;
+    height: 40px;
+    border: none;
+    color: #fffefe;  
+}
+.buscar input{
+    width: 400px;
+    outline: none;
+}
+.buscar ion-icon{
+    color: #17162E;
+    font-size: 1.5rem;
+}
+.check{
+    margin-top: 0.5rem;
+}
+.filmes{
+    padding-bottom: 3rem;
+}
+.filme{
+    display: grid;
+    grid-template-columns: 100px 200px auto;
+    gap: 100px;
+    align-items: center;
+    background: #1D1C3B;
+    box-shadow: 32.8387px 24.5482px 79px rgba(0, 0, 0, 0.15), 23.8851px 17.855px 53.2479px rgba(0, 0, 0, 0.121406), 16.6246px 12.4276px 34.4391px rgba(0, 0, 0, 0.10125), 10.9035px 8.15079px 21.3701px rgba(0, 0, 0, 0.0867188), 6.56775px 4.90965px 12.8375px rgba(0, 0, 0, 0.075), 3.46346px 2.58907px 7.6377px rgba(0, 0, 0, 0.0632813), 1.4367px 1.07399px 4.56719px rgba(0, 0, 0, 0.04875), 0.333519px 0.249318px 2.42246px rgba(0, 0, 0, 0.0285938);
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+.filme img{
+   /*border-radius: 50%;*/
+    width: 120px;
+}
+
+.filme .acoes{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    
+}
+.estrela {
+    color: yellow;
+}
+
+.coracao {
+    
+    color: red;
+}
+
+.acoes p{
+
+}
+
+.filme p{
+    /* width: 50%; */
+    color: #ACACAC;
+}
+
+.filme h3{
+    font-size: 18px;
+}
+.movie{
+    width: 50px;
+    height: 50px;
+    background: red;
+}
+
+@media(max-width: 768px){
+    body{
+        margin: 0.5rem 1rem;
+    }
+    .buscar,
+    .buscar input{
+        width: 100%;
+    }
+    .check{
+        font-size: 14px;
+    }
+    .filme{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
